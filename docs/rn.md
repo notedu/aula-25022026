@@ -1,12 +1,12 @@
-## Requisitos Não Funcionais (RNF)
+## Regras de Negócio (RN)
 
-### RNF01 — Tempo de resposta
-O sistema deve carregar telas principais em até **2 segundos**.
+### RN01 — Maioridade
+Para criar uma conta, o usuário deve ter mais de 18 anos.
 
-### RNF02 — Segurança
-As senhas devem ser armazenadas usando hash seguro (ex.: bcrypt).
+### RN02 — Bloqueio por inatividade
+Usuários inativos por mais de 90 dias devem ser marcados como inativos.
 
-### RNF03 — Compatibilidade
-O sistema deve funcionar nos navegadores Chrome, Edge e Firefox.
+### RN02 — Limite de tentativas de login
+Após 5 tentativas inválidas, a conta deve ser temporariamente bloqueada.
 
-### RNF0N... ASSIM POR DIANTE
+### RN0N... ASSIM POR DIANTE
